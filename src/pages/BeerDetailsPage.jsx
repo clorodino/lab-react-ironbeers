@@ -25,9 +25,7 @@ export default function BeerDetails (props){
             <img src={uniqueBeer.image_url} alt="beer" />
             <h3>{uniqueBeer.name}</h3>
             <p>{uniqueBeer.attenuation_level}</p>
-            <p>
-            {uniqueBeer.tagline} {uniqueBeer.first_brewed}
-            </p>
+            <p>{uniqueBeer.tagline} {uniqueBeer.first_brewed}</p>
             <p>{uniqueBeer.brewers_tips}</p>
             <p>{uniqueBeer.description}</p>
             <p>{uniqueBeer.contributed_by}</p>

@@ -6,13 +6,13 @@ import Header from '../components/Header';
 
 export default function RandomBeer (props){
 
-    const [randomBeer, setrandomBeer] = useState({});
+    const [randomBeer, setRandomBeer] = useState({});
 
     useEffect(() => {
         axios
           .get(`https://ih-beers-api2.herokuapp.com/beers/random`)
           .then((response) => {
-            setrandomBeer(response.data);
+            setRandomBeer(response.data);
           })
           .catch(console.log);
       }, []);

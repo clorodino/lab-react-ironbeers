@@ -4,8 +4,9 @@ import { Link } from "react-router-dom"
 
 export default function Header (){
     return(
-        <div>
-            <Link to="/"><i class="bi bi-house"></i></Link>
+        <div className="header">
+            <Link to="/"><i class="bi bi-house-door-fill"></i></Link>
         </div>
     )   
 }
+/*  */
